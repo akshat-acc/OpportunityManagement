@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -46,8 +47,40 @@ public class TrendController {
 	@CrossOrigin("http://localhost:4200")
 	@GetMapping(value="/getSkillsCount")
 	public List<Integer> getSkillCount(){
-		List<Integer> locationCount = new ArrayList<Integer>();
-		locationCount = trendServiceImpl.getBySkillCount();
-		return locationCount;
+		List<Integer> skillCount = new ArrayList<Integer>();
+		skillCount = trendServiceImpl.getBySkillCount();
+		return skillCount;
+	}
+	
+	@CrossOrigin("http://localhost:4200")
+	@GetMapping(value="/getYoY")
+	public List<String> getYoY(){
+		List<String> yoyList = new ArrayList<>();
+        yoyList = trendServiceImpl.getByYoY();
+        return yoyList;
+	}
+	
+	@CrossOrigin("http://localhost:4200")
+	@GetMapping(value="/getYoYCount")
+	public List<Integer> getYoYCount(){
+		List<Integer> yoyCount = new ArrayList<>();
+        yoyCount = trendServiceImpl.getByYoYCount();
+        return yoyCount;
+	}
+	
+	@CrossOrigin("http://localhost:4200")
+	@GetMapping(value="/getYoY/{location}")
+	public List<String> getYoY(@PathVariable("location") String location){
+		List<String> yoyList = new ArrayList<>();
+        yoyList = trendServiceImpl.getByYoY(location);
+        return yoyList;
+	}
+	
+	@CrossOrigin("http://localhost:4200")
+	@GetMapping(value="/getYoYCount/{location}")
+	public List<Integer> getYoYCount(@PathVariable("location") String location){
+		List<Integer> yoyCount = new ArrayList<>();
+        yoyCount = trendServiceImpl.getByYoYCount(location);
+        return yoyCount;
 	}
 }
