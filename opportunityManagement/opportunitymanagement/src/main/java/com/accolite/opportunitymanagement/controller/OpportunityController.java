@@ -17,26 +17,30 @@ public class OpportunityController {
     @Autowired
     OpportunityServiceImpl opportunityServiceImpl;
 
+    @CrossOrigin("http://localhost:4200")
     @GetMapping(value = "/getAll")
     public List<Opportunity> getAllOpportunity(){
         List<Opportunity> opportunityList = new ArrayList<>();
         opportunityList = opportunityServiceImpl.getAllOpportunity();
         return opportunityList;
     }
-
+    
+    @CrossOrigin("http://localhost:4200")
     @PostMapping(value = "/add")
     public int addOpportunity(@RequestBody Opportunity opportunity)
-    {
+    {	
         return opportunityServiceImpl.insert(opportunity);
     }
 
+    @CrossOrigin("http://localhost:4200")
     @PostMapping(value = "/update/{id}")
     public int updateOpportunity(@PathVariable("id") int id,@RequestBody Opportunity opportunity)
     {
         return opportunityServiceImpl.update(opportunity,id);
     }
 
-    @PostMapping(value = "/delete/{id}")
+    @CrossOrigin(origins="http://localhost:4200")
+    @DeleteMapping(value = "/delete/{id}")
     public int deleteOpportunity(@PathVariable("id") int id)
     {
         return opportunityServiceImpl.delete(id);

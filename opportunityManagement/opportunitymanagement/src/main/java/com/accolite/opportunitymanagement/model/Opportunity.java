@@ -9,7 +9,7 @@ public class Opportunity {
     private String description;
     private String location;
     private String skills;
-    private int userId;
+    private String email;
     private int minExperience;
     private int demand;
     private Date date;
@@ -18,12 +18,12 @@ public class Opportunity {
     public Opportunity() {
     }
 
-    public Opportunity(int id, String description, String location, String skills, int userId, int minExperience, int demand, Date date) {
+    public Opportunity(int id, String description, String location, String skills, String email, int minExperience, int demand, Date date) {
         this.id = id;
         this.description = description;
         this.location = location;
         this.skills = skills;
-        this.userId = userId;
+        this.email = email;
         this.minExperience = minExperience;
         this.demand = demand;
         this.date = date;
@@ -63,15 +63,15 @@ public class Opportunity {
         this.skills = skills;
     }
 
-    public int getUserId() {
-        return userId;
-    }
+    public String getEmail() {
+		return email;
+	}
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public int getMinExperience() {
+	public int getMinExperience() {
         return minExperience;
     }
 
@@ -97,17 +97,17 @@ public class Opportunity {
 
     // toString Method
 
-    @Override
-    public String toString() {
-        return "Opportunity{" +
-                "id=" + id +
-                ", description='" + description + '\'' +
-                ", location='" + location + '\'' +
-                ", skills='" + skills + '\'' +
-                ", userId=" + userId +
-                ", minExperience=" + minExperience +
-                ", demand=" + demand +
-                ", date=" + date +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Opportunity{" +
+//                "id=" + id +
+//                ", description='" + description + '\'' +
+//                ", location='" + location + '\'' +
+//                ", skills='" + skills + '\'' +
+//                ", userId=" + email +
+//                ", minExperience=" + minExperience +
+//                ", demand=" + demand +
+//                ", date=" + date +
+//                '}';
+//    }
 }

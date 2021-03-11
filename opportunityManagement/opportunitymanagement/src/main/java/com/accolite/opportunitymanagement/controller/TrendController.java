@@ -22,7 +22,7 @@ public class TrendController {
 	
 	@CrossOrigin("http://localhost:4200")
 	@GetMapping(value = "/getLocation")
-    public List<String> getAllOpportunity(){
+    public List<String> getLocation(){
         List<String> locationList = new ArrayList<>();
         locationList = trendServiceImpl.getByLocation();
         return locationList;

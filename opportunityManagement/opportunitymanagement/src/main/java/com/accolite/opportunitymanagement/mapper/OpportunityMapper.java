@@ -14,7 +14,7 @@ public class OpportunityMapper implements RowMapper<Opportunity> {
         opportunity.setDescription(rs.getString("description"));
         opportunity.setLocation(rs.getString("location"));
         opportunity.setSkills(rs.getString("skills"));
-        opportunity.setUserId(rs.getInt("userId"));
+        opportunity.setEmail(rs.getString("email"));
         opportunity.setMinExperience(rs.getInt("minExperience"));
         opportunity.setDemand(rs.getInt("demand"));
         opportunity.setDate(rs.getDate("date"));

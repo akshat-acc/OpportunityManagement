@@ -26,12 +26,12 @@ public class OpportunityServiceImpl implements OpportunityService  {
 
     @Override
     public int insert(Opportunity opportunity) {
-        String insertSQL = "insert into Opportunity (description,location,skills,userId,minExperience,demand,date) values (?, ?, ?, ?, ?, ?, ?)";
+        String insertSQL = "insert into Opportunity (description,location,skills,email,minExperience,demand,date) values (?, ?, ?, ?, ?, ?, ?)";
         return jdbcTemplate.update(insertSQL,new Object[]{
                 opportunity.getDescription(),
                 opportunity.getLocation(),
                 opportunity.getSkills(),
-                opportunity.getUserId(),
+                opportunity.getEmail(),
                 opportunity.getMinExperience(),
                 opportunity.getDemand(),
                 opportunity.getDate()});
