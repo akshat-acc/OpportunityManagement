@@ -1,0 +1,10 @@
+{
+    "/delete":{
+    "target" : "http://localhost:8080",
+    "secure" : false
+},
+"/opportunity":{
+    "target" : "http://localhost:8080",
+    "secure" : false
+}
+}

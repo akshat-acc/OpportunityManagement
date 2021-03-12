@@ -1,0 +1,31 @@
+<!-- <p>trends works!</p> -->
+<!-- <div>  
+    <div class="row" style="margin-top:20px;margin-bottom: 10px;">   
+      <div>  
+        <button class="btn btn-success" routerLink="./YoY" style="margin-left:25px">YearOnYearHiring</button>  
+      </div>  
+      <div>  
+        <button class="btn btn-success" routerLink="./Location">Location</button>  
+      </div>  
+      <div>  
+        <button class="btn btn-success" routerLink="./Skills">Skills</button>  
+      </div>   
+    </div>  
+  </div>   -->
+  <section>
+    <div class="example-button-row">
+      <button mat-raised-button class="btn" routerLink="./Location" style="margin-left:25px" color="primary">Location</button>
+      <button mat-raised-button color="primary" routerLink="./Skills" class="btn">Skills</button>
+      <button mat-raised-button color="primary" routerLink="./YoY" class="btn">YearOnYearHiring</button>
+    </div>
+  </section>
+  
+  <!-- <button style="margin-left:50px; margin-top:10px; font-size: 1.5em;" mat-stroked-button color="primary">Trends</button>
+<div style="margin-left:50px; margin-top: 20px; margin-right:50px; justify-content: center; align-items: center;">
+    <mat-tab-group animationDuration="200ms">
+      <mat-tab label="Location" routerLink="./Location"><app-location-chart></app-location-chart></mat-tab>
+      <mat-tab label="Skill" routerLink="./Skills"><app-skill-chart></app-skill-chart></mat-tab>
+      <mat-tab label="YearOnYearHiring" routerLink="./YoY"><app-yoy-chart></app-yoy-chart></mat-tab>
+    </mat-tab-group>
+  </div> -->
+<router-outlet></router-outlet>

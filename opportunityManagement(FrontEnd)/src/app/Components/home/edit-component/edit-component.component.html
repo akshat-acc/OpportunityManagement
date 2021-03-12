@@ -1,0 +1,74 @@
+<!-- <p>edit-component works!</p> -->
+<form class="example-form" #uploadform="ngForm" >
+      <mat-card class="mat-elevation-z6" style=" text-align: center;justify-content: center;align-items: center;text-align: center;">
+        <mat-card-header style="text-align: center;">
+          <mat-card-title>Edit Opportunity</mat-card-title>
+          <span style="float: right;  cursor: pointer;" mat-dialog-close class="material-icons">
+            close
+            </span>
+        </mat-card-header>
+        <hr>
+        <mat-card-content>
+          <div class="row mx-2 my-1">
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>Description</mat-label>
+                <textarea matInput #description maxlength="256" style="resize: none;;" rows="1" [(ngModel)]='dbOpportunity.description' name="description" required></textarea>
+                <mat-hint align = "end">{{description.value.length || 0}}/256</mat-hint>
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+              <mat-form-field appearance="outline">
+                <mat-label>End Date</mat-label>
+                  <input matInput [min]="minDate"  [matDatepicker]="picker1" required [(ngModel)]='dbOpportunity.date' name="date" style="float:left">
+                  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                  <mat-datepicker #picker1 disabled="false"></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row mx-2 my-1">
+            <div class="col-md-6">
+              <mat-form-field appearance = "outline">
+                <mat-label>Location</mat-label>
+                <input matInput [(ngModel)]='dbOpportunity.location' required name="location">
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+              <mat-form-field appearance = "outline">
+                <mat-label>Skills</mat-label>
+                <input matInput [(ngModel)]='dbOpportunity.skills' required name="skills">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row mx-2 my-1">
+
+            <div class="col-md-6">
+              <mat-form-field>
+                <mat-label>Demand</mat-label>
+                <input matInput type="number" min="0" oninput="validity.valid||(value='');" [(ngModel)]='dbOpportunity.demand' required name="demand">
+              </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+              <mat-form-field>
+                <mat-label>Minimum Experience</mat-label>
+                <input matInput type="number" min="0" oninput="validity.valid||(value='');" [(ngModel)]='dbOpportunity.minExperience' required name="minExperience">
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-footer class="my-1">
+          <div class="mx-auto col-md-9">
+            <!-- <button class="btn btn-sm btn-danger col-md-5 mx-1 mat-elevation-z6">Cancel</button>
+            <button class="btn btn-sm btn bg-info col-md-5 mx-1 mat-elevation-z6" >Submit</button> -->
+            <!-- <button mat-raised-button color="primary" type="submit">Submit</button> -->
+            <button mat-raised-button type="submit" color="accent" (click) = "onEdit()" style="margin-bottom: 10px;" [mat-dialog-close]="true">Edit</button>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+      <!-- <br> -->
+  </form>

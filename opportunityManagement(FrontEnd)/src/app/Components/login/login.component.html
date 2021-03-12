@@ -1,0 +1,29 @@
+<div class="page">
+<mat-toolbar color="primary" style="justify-content:center">
+    <span>Welcome to AU Management Portal</span>
+</mat-toolbar>
+<div *ngIf="!socialUser" class="card text-center mt-4">
+  <div class="container">
+      <div class="row">
+        <h2 style="text-align:center">Login with Google</h2>
+        <div class="col">
+          <a class="google btn" (click)="signInWithGoogle()"><i class="fa fa-google fa-fw">
+            </i>Login with Google+
+          </a>
+        </div>      
+      </div>
+  </div>
+</div>
+</div>
+<!-- <div *ngIf="isLoggedin === false" class="card text-center mt-4">
+    <div class="card-block">
+      <h4 class="card-text font-weight-bold">Sign In Using</h4>
+    </div>
+    <div class="card-block">
+      <button class="btn col-md-2" (click)="signInWithGoogle()">
+        <img src="../../../assets/Google.png"class="img-fluid">
+      </button>
+    </div>
+</div> -->
+
+

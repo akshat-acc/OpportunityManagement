@@ -1,0 +1,73 @@
+<!-- <p>create-opportunity works!</p> -->
+  
+    <div class="form">
+      <form [formGroup]="OpportunityForm" role="form" #myForm="ngForm" (ngSubmit)="Submit()">
+        <input type="hidden" formControlName="oppid">
+        <mat-card class="mat-elevation-z6" style=" text-align: center;">
+          <mat-card-header style="text-align: center;">
+            <mat-card-title>Create Opportunity</mat-card-title>
+          </mat-card-header>
+          <hr>
+          <mat-card-content>
+            <div class="row mx-2 my-1">
+              <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                  <mat-label>Description</mat-label>
+                  <textarea matInput #description maxlength="256" style="resize: none;;" rows="1" formControlName="description" required></textarea>
+                  <mat-hint align = "end">{{description.value.length || 0}}/256</mat-hint>
+                </mat-form-field>
+              </div>
+  
+              <div class="col-md-6">
+                <mat-form-field appearance="outline">
+                  <mat-label>End Date</mat-label>
+                    <input matInput [min]="minDate"  [matDatepicker]="picker1" required formControlName = "date">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1 disabled="false"></mat-datepicker>
+                </mat-form-field>
+              </div>
+            </div>
+  
+            <div class="row mx-2 my-1">
+              <div class="col-md-6">
+                <mat-form-field appearance = "outline">
+                  <mat-label>Location</mat-label>
+                  <input matInput formControlName="location" required>
+                </mat-form-field>
+              </div>
+  
+              <div class="col-md-6">
+                <mat-form-field appearance = "outline">
+                  <mat-label>Skills</mat-label>
+                  <input matInput formControlName="skills" required>
+                </mat-form-field>
+              </div>
+            </div>
+  
+            <div class="row mx-2 my-1">
+  
+              <div class="col-md-6">
+                <mat-form-field>
+                  <mat-label>Demand</mat-label>
+                  <input matInput type="number" min="0" oninput="validity.valid||(value='');" formControlName="demand" required>
+                </mat-form-field>
+              </div>
+  
+              <div class="col-md-6">
+                <mat-form-field>
+                  <mat-label>Minimum Experience</mat-label>
+                  <input matInput type="number" min="0" oninput="validity.valid||(value='');" formControlName="minExperience" required>
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-footer class="my-1">
+            <div class="mx-auto col-md-9">
+              <!-- <button class="btn btn-sm btn-danger col-md-5 mx-1 mat-elevation-z6">Cancel</button>
+              <button class="btn btn-sm btn bg-info col-md-5 mx-1 mat-elevation-z6" >Submit</button> -->
+              <button mat-raised-button color="primary" type="submit">Submit</button>
+            </div>
+          </mat-card-footer>
+        </mat-card>
+      </form>
+    </div>

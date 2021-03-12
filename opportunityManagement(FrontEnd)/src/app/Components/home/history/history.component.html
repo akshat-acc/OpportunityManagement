@@ -1,0 +1,41 @@
+<!-- <p>history works!</p>
+<div data-title="longer text is going to be shown in tooltip for good ui purpose.">Let this be shown..</div> -->
+<div class="mat-elevation-z8 table" style="margin-left:50px; margin-top: 20px; margin-right:50px; justify-content: center; align-items: center;">
+  <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+    <ng-container matColumnDef="No.">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>No.</strong> </th>
+      <td mat-cell *matCellDef="let element; let i = index;"> <strong>{{ (paginatorRef.pageIndex * paginatorRef.pageSize) + (i + 1) }}</strong></td>
+    </ng-container>
+
+    <ng-container matColumnDef="ManagerName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong >Manager Name</strong> </th>
+      <td mat-cell *matCellDef="let element">{{element.managerEmail.split(".")[0].charAt(0).toUpperCase()+element.managerEmail.split(".")[0].slice(1)}} {{element.managerEmail.split(".")[1].split("@")[0].charAt(0).toUpperCase()+element.managerEmail.split(".")[1].split("@")[0].slice(1)}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>Operation Date</strong>  </th>
+      <td mat-cell *matCellDef="let element">{{element.date}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="operation">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>Operation</strong> </th>
+      <td mat-cell *matCellDef="let element"> {{element.operation}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="oldData">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>Old Data</strong> </th>
+      <td mat-cell *matCellDef="let element"> {{element.oldData}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="newData" style="width:50px">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> <strong>New Data</strong> </th>
+      <td mat-cell *matCellDef="let element" data-title={{element.newData}}> {{element.newData}}</td>
+    </ng-container> 
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+  <mat-paginator fxFlex="100" #paginatorRef [length]="5" [pageSize]="5" [pageSizeOptions]="[5, 10, 50, 100]" showFirstLastButtons></mat-paginator>
+</div>

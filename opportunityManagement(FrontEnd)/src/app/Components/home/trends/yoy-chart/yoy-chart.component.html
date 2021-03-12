@@ -1,0 +1,23 @@
+<!-- <p>yoy-chart works!</p> -->
+<div class="chart-container" style="position: relative; height:40vh; width:65vw">    
+       
+    <!-- <form>
+        <input name="location" [(ngModel)]="location" placeholder="Enter Location">
+        <input type="button" (click)="loadChart()" value="Click"/>
+    </form> -->
+    <mat-form-field appearance="outline" style="margin-top: 10px;">
+        <mat-label>Select an option</mat-label>
+        <mat-select [(value)]="location">
+          <mat-option value="">Default</mat-option>
+          <mat-option value="Bangalore">Bangalore</mat-option>
+          <mat-option value="Chennai">Chennai</mat-option>
+          <mat-option value="Delhi">Delhi</mat-option>
+          <mat-option value="Hyderabad">Hyderabad</mat-option>
+          <mat-option value="Mumbai">Mumbai</mat-option>          
+        </mat-select>
+      </mat-form-field>
+      <!-- <input type="button" (click)="loadChart()" value="Process" class=""/> -->
+      <button mat-raised-button color="#28a745" (click)="loadChart()" style="margin-left: 15px;height:38px;padding:auto;color: #fff;background-color: #4b5258">Process</button>
+      <canvas id="canvas">{{yoychart}}</canvas> 
+</div> 
+

@@ -1,0 +1,83 @@
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <nav>
+            <div class="menu">
+               <ul>
+                  <li title="Home"><a href="#">Home</a></li>
+                  <li title="Opportunity"><a (click)="home()">Opportunity</a></li>
+                  <li title="Candidate"><a href="#">Candidate</a></li>
+                  <li title="Course"><a href="#">Course</a></li>
+                  <li title="Assessment"><a href="#">Assessment</a></li>
+                  <li title="Onboarding"><a href="#">Onboarding</a></li>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" title="Logout">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" (click)="logoutUser()">Hi, {{loggedInUser.name}}<i class="fa fa-sign-out" aria-hidden="true" style="padding-left: 5px;"></i></a>
+                  </li>
+                </ul>
+               </ul>
+            </div>
+         </nav>
+        </div>
+      </nav>
+      <div class="image">
+        <h1 class="heading">Accolite Digital India Pvt. Ltd</h1>
+        <p>ACCELERATING
+          DIGITAL TRANSFORMATION FOR
+          THE FORTUNE 500.</p>
+        <p>Accolite is an innovative, design thinking software company that guarantees seamless digital experiences with maximum results. Backed by the best technical minds in the industry, and only the best cutting edge technology, we strive to help our clients overcome their digital challenges and achieve their goals.</p>
+        <p><button class="btn btn-large" ><a href="https://www.accolite.com/">Know More</a></button></p>
+     </div>
+
+  </body>
+
+<!-- side bar main wrapper -->
+
+    
+    
+    <!-- <mat-sidenav-container>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+    
+         
+    
+    <mat-nav-list class="list-container">
+      <a mat-list-item routerLink="/menu" routerLinkActive="active-link" (click)="sidenav.toggle()">
+        <span class="material-icons">home</span>
+        <a mat-list-item> Home </a>
+      </a> 
+    </mat-nav-list>
+    <mat-nav-list class="list-container">
+      <a mat-list-item [routerLink]="['/home/subs']" (click)="sidenav.toggle()">
+        <span class="material-icons">subscriptions</span>
+        <a mat-list-item > My Subscriptions </a>
+      </a> 
+    </mat-nav-list>
+    <mat-nav-list class="list-container">
+      <a mat-list-item [routerLink]="['/home/videos']" (click)="sidenav.toggle()">
+        <span class="material-icons">video_library</span>
+        <a mat-list-item > My Videos </a>
+      </a> 
+    </mat-nav-list>
+    <mat-nav-list class="list-container">
+      <a mat-list-item  [routerLink]="['/home/upload']" (click)="sidenav.toggle()" routerLinkActive="active-link">
+        <span class="material-icons">publish</span>
+        <a mat-list-item > Upload Video </a>
+      </a> 
+    </mat-nav-list>
+    
+        </mat-nav-list>
+      </mat-sidenav>
+      
+      <mat-sidenav-content style="height: 88vh;">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+     
+    </mat-sidenav-container> -->
+    <!-- 
+    <div fxLayout="row" fxFlex="100">
+     <app-sidebar fxLayout="column" fxFlex="300px"></app-sidebar>
+     
+    </div> -->

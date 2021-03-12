@@ -1,0 +1,57 @@
+[data-title] {
+	// font-size: 18px;
+	position: relative;
+	cursor: help;
+}
+
+[data-title]:hover::before {
+	content: attr(data-title);
+	position: absolute;
+	bottom: -16px;
+	padding: 10px;
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+table{
+	width: 100%;
+   }
+
+   .mat-column-oldData {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 20% !important;
+	width: 20% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+  
+	word-break: break-word;
+  
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+  }
+
+  .mat-column-newData {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 25% !important;
+	width: 25% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+  
+	word-break: break-word;
+  
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+  }
+
+  .mat-cell {
+	padding: 5px 30px 5px 0;
+	text-overflow: ellipsis;
+  }

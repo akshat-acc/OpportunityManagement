@@ -1,0 +1,87 @@
+<!-- <p>home works!</p> -->
+<div class="menu">
+    <mat-toolbar color="primary" >
+      <mat-toolbar-row >
+        <button mat-icon-button class="sidenav">
+          <mat-icon  (click)="sidenav.toggle()" style="border-radius: 5px;">menu</mat-icon>
+        </button>
+        <span class="example-spacer"></span>
+        <h1>Opportunity Management Portal</h1>
+         <!-- <mat-form-field  floatLabel="never" style="left: 80px; width: 60%;"> 
+          <input matInput placeholder="Search"><i class="material-icons">search</i>
+        </mat-form-field> -->
+    
+        <span class="example-spacer"></span>
+        <div class="user_icon">
+            <mat-select-trigger>
+              <mat-icon>account_circle</mat-icon>
+              <mat-select>
+                <mat-option>{{loggedInUser.name}}</mat-option>
+                <mat-option (click) = "logoutUser()">Log Out</mat-option>
+              </mat-select>
+            </mat-select-trigger>
+          </div>
+      </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+    
+    
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+    
+          <mat-nav-list class="list-container">
+            <a mat-list-item routerLink="/home/opportunity" routerLinkActive="active-link" (click)="sidenav.toggle()">
+              <span class="material-icons">manage_accounts</span>
+              <a mat-list-item > Opportunity </a>
+            </a> 
+          </mat-nav-list>  
+    
+    <!-- <mat-nav-list class="list-container">
+      <a mat-list-item routerLink="/home/search" routerLinkActive="active-link" (click)="sidenav.toggle()">
+        <span class="material-icons">search</span>
+        <a mat-list-item> Search </a>
+      </a> 
+    </mat-nav-list> -->
+    <mat-nav-list class="list-container">
+      <a mat-list-item [routerLink]="['/home/trends']" (click)="sidenav.toggle()">
+        <span class="material-icons">trending_up</span>
+        <a mat-list-item > Trends </a>
+      </a> 
+    </mat-nav-list>
+
+    <mat-nav-list class="list-container">
+      <a mat-list-item  [routerLink]="['/home/audit']" (click)="sidenav.toggle()">
+        <span class="material-icons">history</span>
+        <a mat-list-item > History </a>
+      </a> 
+    </mat-nav-list>
+
+    <mat-nav-list class="list-container">
+      <a mat-list-item  [routerLink]="['/menu']" (click)="sidenav.toggle()">
+        <!-- <span class="material-icons">
+          keyboard_return
+          </span> -->
+          <span class="material-icons">
+            reply
+            </span>
+        <a mat-list-item > Back </a>
+      </a> 
+    </mat-nav-list>
+          <!-- <a mat-list-item [routerLink]="'/create-activity'"> Create Activity </a> -->
+    
+          <!-- <a *ngIf="(user.isAdmin == 1)"mat-list-item [routerLink]="'/'">Manage Videos </a>
+          <a *ngIf="(user.isAdmin == 1)"mat-list-item [routerLink]="'/'"> Reported Videos </a> -->
+         
+          <!-- <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item (click)="sidenav.toggle()">Close</a> -->
+    
+        </mat-nav-list>
+      </mat-sidenav>
+      
+      <mat-sidenav-content style="height: 88vh;">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+     
+    </mat-sidenav-container>
