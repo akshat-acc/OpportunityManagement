@@ -14,44 +14,43 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Repository("TrendService")
 @Transactional
 public class TrendServiceImpl {
 	
+	Logger logger= LoggerFactory.getLogger(TrendServiceImpl.class);
+	
+//	@Autowired
+//    private DataSource datasource;
 	
 	@Autowired
-    private DataSource datasource;
+	private JdbcTemplate jdbcTemplate;
 	
 	public List<String> getByLocation(){
 		List<String> LocationList = new ArrayList<String>();
 		String query = "select distinct location from Opportunity";
-		
-		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 		List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query);
 		for(Map<String,Object> row : Rows){
 			String loc = (String.valueOf(row.get("location")));
 			LocationList.add(loc);
-			System.out.println(row);
 		}
-		for(String s:LocationList) {
-			System.out.println(s);
-		}
+		logger.info("Get location data from dB");
 		return LocationList;
 	}
 	
 	public List<Long> getByLocationCount(){
 		List<Long> locationCount = new ArrayList<Long>();
 		String query = "select count(*) from Opportunity group by location";
-		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
+//		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 		List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query);
 		for(Map<String,Object> row : Rows){
 			Long val = (long) (row.get("count(*)"));
 			locationCount.add(val);
-//			System.out.println(row);
 		}
-		for(Long s:locationCount) {
-			System.out.println(s);
-		}
+		logger.info("Get location count from dB");
 		return locationCount;
 	}
 	
@@ -59,7 +58,7 @@ public List<String> getBySkill(){
 	List<String> skillList = new ArrayList<String>();
 	HashMap<String,Integer> hMap= new HashMap<>();
 	String query = "select skills from Opportunity";
-	JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
+//	JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 	List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query);
 	for(Map<String,Object> row : Rows){
 		String skill = (String.valueOf(row.get("skills")));
@@ -73,17 +72,18 @@ public List<String> getBySkill(){
 			      hMap.put(s, count + 1);
 			    }
 		}	
-		System.out.println(row);
 	}
 	 for (HashMap.Entry<String, Integer> entry : hMap.entrySet())  
          skillList.add(entry.getKey()); 
+	 logger.info("Get skills data from dB");
 	return skillList;
 }
+
 	public List<Integer> getBySkillCount(){
 		List<Integer> skillList = new ArrayList<Integer>();
 		HashMap<String,Integer> hMap= new HashMap<>();
 		String query = "select skills from Opportunity";
-		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
+//		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 		List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query);
 		for(Map<String,Object> row : Rows){
 			String skill = (String.valueOf(row.get("skills")));
@@ -97,18 +97,18 @@ public List<String> getBySkill(){
 				      hMap.put(s, count + 1);
 				    }
 			}	
-			System.out.println(row);
 		}
 		 for (HashMap.Entry<String, Integer> entry : hMap.entrySet())  
 	         skillList.add(entry.getValue()); 
+		 logger.info("Get skills count from dB");
 		return skillList;
 	}
-	
+
 	public List<String> getByYoY(){
 		List<String> yearList = new ArrayList<String>();
 		TreeMap<String,Integer> hMap= new TreeMap<>();
 		String query = "select date from Opportunity";	
-		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
+//		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 		List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query);
 		for(Map<String,Object> row : Rows){
 			String year = (String.valueOf(row.get("date"))).substring(0, 4);
@@ -120,8 +120,9 @@ public List<String> getBySkill(){
 			      hMap.put(year, count + 1);
 			    }
 		}
-		for (Map.Entry<String, Integer> entry : hMap.entrySet())  
-	         yearList.add(entry.getKey()); 
+		for (Map.Entry<String, Integer> entry : hMap.entrySet()) {
+	         yearList.add(entry.getKey());}
+		logger.info("Get years data from dB for overall MS Hiring");
 		return yearList;
 	}
 	
@@ -129,7 +130,7 @@ public List<String> getBySkill(){
 		List<Integer> yearList = new ArrayList<Integer>();
 		TreeMap<String,Integer> hMap= new TreeMap<>();
 		String query = "select date,demand from Opportunity";	
-		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
+//		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 		List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query);
 		for(Map<String,Object> row : Rows){
 			String year = (String.valueOf(row.get("date"))).substring(0, 4);
@@ -141,11 +142,10 @@ public List<String> getBySkill(){
 			      int count = hMap.get(year);
 			      hMap.put(year, count + demand);
 			    }
-			System.out.println(year+" "+demand);
 		}
-//		Map<Integer, String> map = new TreeMap<Integer, String>(hmap);
 		for (Map.Entry<String, Integer> entry : hMap.entrySet())  
 	         yearList.add(entry.getValue()); 
+		logger.info("Get years demand data from dB for overall MS Hiring");
 		return yearList;
 	}
 	
@@ -153,7 +153,7 @@ public List<String> getBySkill(){
 		List<String> yearList = new ArrayList<String>();
 		TreeMap<String,Integer> hMap= new TreeMap<>();
 		String query = "select date from Opportunity where location=?";	
-		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
+//		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 		List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query, new Object[]{loc});
 		for(Map<String,Object> row : Rows){
 			String year = (String.valueOf(row.get("date"))).substring(0, 4);
@@ -164,18 +164,18 @@ public List<String> getBySkill(){
 			      int count = hMap.get(year);
 			      hMap.put(year, count + 1);
 			    }
-			System.out.println(row);
 		}
 		for (Map.Entry<String, Integer> entry : hMap.entrySet())  
 	         yearList.add(entry.getKey()); 
+		logger.info("Get years data from dB for overall MS Hiring w.r.t specific location");
 		return yearList;
 	}
-	
+
 	public List<Integer> getByYoYCount(String location){
 		List<Integer> yearList = new ArrayList<Integer>();
 		TreeMap<String,Integer> hMap= new TreeMap<>();
 		String query = "select date,demand from Opportunity where location=?";	
-		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
+//		JdbcTemplate jdbcTemplate= new JdbcTemplate(datasource);
 		List<Map<String,Object>> Rows = jdbcTemplate.queryForList(query, new Object[] {location});
 		for(Map<String,Object> row : Rows){
 			String year = (String.valueOf(row.get("date"))).substring(0, 4);
@@ -187,10 +187,10 @@ public List<String> getBySkill(){
 			      int count = hMap.get(year);
 			      hMap.put(year, count + demand);
 			    }
-			System.out.println(year+" "+demand);
 		}
 		for (Map.Entry<String, Integer> entry : hMap.entrySet())  
 	         yearList.add(entry.getValue()); 
+		logger.info("Get years demand data from dB for overall MS Hiring w.r.t specific location");
 		return yearList;
 	}
 	

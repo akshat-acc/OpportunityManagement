@@ -1,0 +1,28 @@
+CREATE TABLE `accolitedb`.`opportunity` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `description` VARCHAR(45) NOT NULL,
+  `location` VARCHAR(45) NOT NULL,
+  `skills` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `minExperience` INT NOT NULL,
+  `demand` INT NOT NULL,
+  `date` DATE NOT NULL,
+  PRIMARY KEY (`Id`));
+
+
+CREATE TABLE `accolitedb`.`audit` (
+`Id` INT NOT NULL AUTO_INCREMENT,
+`managerEmail` VARCHAR(200) NOT NULL,
+`date` DATE NOT NULL,
+`operation` VARCHAR(50) NOT NULL,
+`oldData` VARCHAR(2000) NOT NULL,
+`newData` VARCHAR(2000) NOT NULL,
+PRIMARY KEY (`Id`));
+
+CREATE TABLE accolitedb.`User` (
+	userId int NOT NULL AUTO_INCREMENT,
+	firstName varchar(100) NOT NULL,
+	lastName varchar(100) NOT NULL,
+	email varchar(100) NOT NULL,
+	PRIMARY KEY (userId)
+);

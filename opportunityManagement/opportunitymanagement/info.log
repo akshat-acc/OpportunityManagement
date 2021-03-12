@@ -1,0 +1,250 @@
+2021-03-13 00:16:18.175  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.UserServiceImpl                : Get all users
+2021-03-13 00:16:18.318  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.UserServiceImpl                : Added User with userEmail :akshat.mehta@accolitedigital.com
+2021-03-13 00:16:28.318  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:17:45.638  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.OpportunityServiceImpl         : Added opportunity with OpportunityId: 0
+2021-03-13 00:17:45.642  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.AuditServiceImpl               : Audit Create by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:17:45.715  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:17:58.216  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:18:10.623  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:18:23.530  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.AuditServiceImpl               : Audit Update (29) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:18:23.639  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 29
+2021-03-13 00:18:23.985  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:18:38.514  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.AuditServiceImpl               : Audit Delete (29) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:18:38.518  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Deleted opportunity with Id: 29
+2021-03-13 00:18:38.534  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:18:44.661  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:19:00.267  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:19:00.291  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:19:01.877  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:19:01.894  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:19:04.129  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:19:04.137  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:19:12.729  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:19:12.753  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:19:18.880  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:19:18.893  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:19:23.291  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:19:23.305  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:19:27.215  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:19:27.227  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:19:34.134  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:19:34.143  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:27:00.336  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.UserServiceImpl                : Get all users
+2021-03-13 00:27:04.801  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:27:12.570  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:27:15.304  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:27:18.098  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:27:20.763  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:27:23.591  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:27:25.093  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:27:26.699  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:27:29.086  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:27:30.391  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:27:35.699  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:27:35.710  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:27:36.730  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:27:36.741  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:27:37.469  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:27:37.491  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:27:38.440  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:27:38.448  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:27:39.214  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:27:39.225  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:27:39.947  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:27:39.970  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:27:40.825  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:27:40.838  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:27:41.700  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:27:41.711  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:27:42.589  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:27:42.605  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:27:46.046  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:27:46.056  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:27:49.804  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:27:53.641  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:27:53.649  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:27:56.866  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:03.985  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:07.240  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.AuditServiceImpl               : Audit Update (28) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:28:07.254  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 28
+2021-03-13 00:28:07.881  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:10.635  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:13.592  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.AuditServiceImpl               : Audit Update (11) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:28:13.605  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 11
+2021-03-13 00:28:13.921  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:15.292  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:19.114  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.AuditServiceImpl               : Audit Update (11) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:28:19.117  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 11
+2021-03-13 00:28:19.735  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:25.707  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:40.212  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.AuditServiceImpl               : Audit Update (28) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:28:40.215  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 28
+2021-03-13 00:28:40.661  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:28:44.259  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:28:44.277  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:28:47.747  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:28:47.756  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:28:52.599  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:29:03.970  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:29:10.717  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.AuditServiceImpl               : Audit Update (28) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:29:10.721  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 28
+2021-03-13 00:29:11.191  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:29:15.044  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:29:15.072  INFO 20844 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:29:18.886  INFO 20844 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:29:18.900  INFO 20844 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:29:20.511  INFO 20844 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:29:20.525  INFO 20844 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:29:21.347  INFO 20844 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:29:21.359  INFO 20844 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:29:28.674  INFO 20844 --- [nio-8080-exec-1] c.a.o.s.I.UserServiceImpl                : Get all users
+2021-03-13 00:29:30.170  INFO 20844 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:29:32.905  INFO 20844 --- [nio-8080-exec-2] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:39:29.603  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.UserServiceImpl                : Get all users
+2021-03-13 00:39:30.830  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:39:38.980  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:39:41.871  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:39:47.049  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:39:50.720  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 11
+2021-03-13 00:39:50.728  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.AuditServiceImpl               : Audit Update (11) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:39:51.346  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:39:53.718  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:39:57.459  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.AuditServiceImpl               : Audit Update (11) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:39:57.461  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 11
+2021-03-13 00:39:57.965  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:40:03.208  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:40:07.425  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.AuditServiceImpl               : Audit Update (27) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:40:07.444  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 27
+2021-03-13 00:40:08.120  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:40:13.197  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:40:15.791  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:40:17.303  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:40:21.974  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:40:21.987  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:40:22.872  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:40:22.887  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:40:23.840  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:40:23.863  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:40:25.146  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:40:25.157  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:40:25.969  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:40:25.981  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:40:26.665  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:40:26.684  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:40:30.061  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:30.073  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:33.329  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:33.343  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:35.980  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:35.993  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:39.867  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:39.876  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:43.897  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:43.908  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:47.402  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:47.414  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:40:56.379  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.UserServiceImpl                : Get all users
+2021-03-13 00:40:58.224  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:03.060  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:41:06.436  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:41:09.622  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:41:09.644  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:41:10.614  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:41:10.625  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:41:11.389  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:41:11.401  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:41:12.502  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:41:12.516  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:41:15.327  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:41:15.341  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:41:18.656  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:41:18.664  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:41:22.612  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:25.922  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:30.163  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:39.616  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:48.280  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.AuditServiceImpl               : Audit Update (8) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:41:48.295  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 8
+2021-03-13 00:41:48.650  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:50.294  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:53.463  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.AuditServiceImpl               : Audit Update (8) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:41:53.466  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 8
+2021-03-13 00:41:53.909  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:54.915  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:41:58.996  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.AuditServiceImpl               : Audit Update (8) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:41:58.997  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 8
+2021-03-13 00:41:59.322  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:16.030  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:25.021  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.UserServiceImpl                : Get all users
+2021-03-13 00:43:26.854  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:29.539  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:31.954  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:43:33.722  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 00:43:37.136  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:43:37.159  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:43:38.132  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:43:38.142  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:43:38.912  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:43:38.925  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:43:39.837  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 00:43:39.854  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 00:43:42.864  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:43:42.872  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:43:46.077  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:43:46.084  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 00:43:47.164  INFO 19124 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 00:43:47.173  INFO 19124 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 00:43:48.469  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 00:43:48.479  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 00:43:51.344  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:53.445  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:55.328  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.AuditServiceImpl               : Audit Update (11) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:43:55.335  INFO 19124 --- [nio-8080-exec-3] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 11
+2021-03-13 00:43:55.715  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:57.137  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:43:58.664  INFO 19124 --- [nio-8080-exec-8] c.a.o.s.I.AuditServiceImpl               : Audit Update (11) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:43:58.666  INFO 19124 --- [nio-8080-exec-9] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 11
+2021-03-13 00:43:59.285  INFO 19124 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:44:08.052  INFO 19124 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 00:44:12.889  INFO 19124 --- [nio-8080-exec-2] c.a.o.s.I.AuditServiceImpl               : Audit Update (6) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 00:44:12.941  INFO 19124 --- [nio-8080-exec-6] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 6
+2021-03-13 00:44:13.438  INFO 19124 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:42:00.679  INFO 19308 --- [nio-8080-exec-1] c.a.o.s.I.UserServiceImpl                : Get all users
+2021-03-13 03:42:01.927  INFO 19308 --- [nio-8080-exec-2] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:42:04.983  INFO 19308 --- [nio-8080-exec-3] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 03:42:14.790  INFO 19308 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 03:42:14.805  INFO 19308 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 03:42:16.315  INFO 19308 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 03:42:16.323  INFO 19308 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 03:42:17.567  INFO 19308 --- [nio-8080-exec-8] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 03:42:17.598  INFO 19308 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 03:42:20.458  INFO 19308 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:42:20.469  INFO 19308 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:42:23.067  INFO 19308 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:42:23.079  INFO 19308 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:42:27.211  INFO 19308 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:43:06.837  INFO 19308 --- [nio-8080-exec-7] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:43:06.878  INFO 19308 --- [nio-8080-exec-9] c.a.o.s.I.AuditServiceImpl               : Audit Create by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 03:43:06.878  INFO 19308 --- [nio-8080-exec-8] c.a.o.s.I.OpportunityServiceImpl         : Added opportunity with OpportunityId: 0
+2021-03-13 03:43:10.186  INFO 19308 --- [io-8080-exec-10] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:43:15.104  INFO 19308 --- [nio-8080-exec-1] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:43:39.669  INFO 19308 --- [nio-8080-exec-2] c.a.o.s.I.AuditServiceImpl               : Audit Update (30) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 03:43:39.787  INFO 19308 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Updated opportunity with Id: 30
+2021-03-13 03:43:40.169  INFO 19308 --- [nio-8080-exec-5] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:43:49.807  INFO 19308 --- [nio-8080-exec-6] c.a.o.s.I.AuditServiceImpl               : Audit Delete (30) by Manager with email: akshat.mehta@accolitedigital.com
+2021-03-13 03:43:49.815  INFO 19308 --- [nio-8080-exec-9] c.a.o.s.I.OpportunityServiceImpl         : Deleted opportunity with Id: 30
+2021-03-13 03:43:49.838  INFO 19308 --- [nio-8080-exec-8] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
+2021-03-13 03:44:09.894  INFO 19308 --- [io-8080-exec-10] c.a.o.s.I.AuditServiceImpl               : Get all audit data
+2021-03-13 03:44:44.399  INFO 19308 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get location data from dB
+2021-03-13 03:44:44.412  INFO 19308 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get location count from dB
+2021-03-13 03:44:44.949  INFO 19308 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get skills data from dB
+2021-03-13 03:44:44.964  INFO 19308 --- [nio-8080-exec-4] c.a.o.s.I.TrendServiceImpl               : Get skills count from dB
+2021-03-13 03:44:45.500  INFO 19308 --- [nio-8080-exec-5] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring
+2021-03-13 03:44:45.527  INFO 19308 --- [nio-8080-exec-7] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring
+2021-03-13 03:44:49.964  INFO 19308 --- [nio-8080-exec-6] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:44:49.973  INFO 19308 --- [nio-8080-exec-9] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:44:51.803  INFO 19308 --- [io-8080-exec-10] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:44:51.814  INFO 19308 --- [nio-8080-exec-1] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:44:53.482  INFO 19308 --- [nio-8080-exec-3] c.a.o.s.I.TrendServiceImpl               : Get years data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:44:53.489  INFO 19308 --- [nio-8080-exec-2] c.a.o.s.I.TrendServiceImpl               : Get years demand data from dB for overall MS Hiring w.r.t specific location
+2021-03-13 03:44:57.568  INFO 19308 --- [nio-8080-exec-4] c.a.o.s.I.OpportunityServiceImpl         : Get all opportunities
